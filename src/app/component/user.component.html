@@ -11,7 +11,7 @@
                     {{hobby}} <button (click)="deleteHobby(i)">X</button>
         </li>
     </ul>
-    <form (submit)="addHobby(hobby.value)">
+    <form (submit)="addHobby(hobby.value); hobby.value=''">
         <label> Add hobby: </label><br>
         <input type="text" #hobby ><br> 
     </form>
